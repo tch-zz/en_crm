@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="resetcss.css">
+    <link rel="stylesheet" href="crm.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="n_crm.js"></script>
+</head>
+<body>
+  <div class="header" style="justify-content:end";>
+
+      <div class="burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+     <div class="sidenavpage">
+      <div class="sidenav">
+         <ul>
+          <li><a href="trading_record.html">Transition</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="index.html">Customers</a></li>
+         </ul>
+      </div>
+     </div>
+   </div>
+
+    <div class="list_main allbackground">
+        <div class="small-searchbar">
+            <form action="">
+              <input type="search" placeholder="SEARCH" />
+              <button type="submit"><img src="search.svg" alt="" /></button>
+            </form>
+            <br />
+    
+            <div class="list td_padding">
+                <table>
+                    <tr>
+                        <th class="productnumber">Product No.</th>
+                        <th class="productname">Name</th>
+                        <th class="category">Category</th>
+                        <th class="productcost">Cost</th>
+                        <th class="productprice">Price</th>
+                        <th class="productmemo">Note</th>
+                      </tr>
+                    <tr>
+                      <td class="productnumber">Gold1234</td>
+                      <td class="productname">Fancy shampoo</td>
+                      <td class="category">shampoo</td>
+                      <td class="productcost">20</td>
+                      <td class="productprice">30</td>
+                      <td class="productmemo">-</td>
+                    </tr>
+                    <tr>
+                        <td class="productnumber">Gold1144</td>
+                        <td class="productname">Sensetive Shampoo</td>
+                        <td class="category">shampoo</td>
+                        <td class="productcost">30</td>
+                        <td class="productprice">40</td>
+                        <td class="productmemo">-</td>
+                      </tr>
+                    <tr>
+                        <td class="productnumber">Gold2234</td>
+                        <td class="productname">Keratin Conditioner</td>
+                        <td class="category">Conditioner</td>
+                        <td class="productcost">20</td>
+                        <td class="productprice">25</td>
+                        <td class="productmemo">-</td>
+                    </tr>
+                   
+                 
+                  </table>
+    </div>
+    <div class="prdjp_bg">
+    <div class="prdjp-wrap">
+        <button id="prdjp-closebtn" type="button">
+          x
+        </button>
+      <h2>Add Product</h2>
+      <form action="">
+      <div class="prdbrand">
+        <label for="brand">Brand</label>  
+        <input list="prdbrand" name="brand" id="brand">
+        <datalist id="prdbrand">
+          <option value="Goldwell">Goldwell</option>
+          <option value="Wella">Wella</option>
+          <option value="Keune">Keune</option>
+          <option value="MJL">MJL</option>
+          <option value="Ford">Ford</option>
+        </datalist>
+        <!-- <button id="crtbrand" type="button">
+          <p>+</p>
+        </button> -->
+      </div>
+      <div class="categories">
+          <label for="categories">Category</label>   
+          <input list="prdcg" name="categories" id="categories">
+          <datalist id="prdcg">
+            <option value="Shampoo">Shampoo</option>
+            <option value="Conditioner">Conditioner</option>
+            <option value="Mask">Mask</option>
+            <option value="Gel">Gel</option>
+            <option value="Oil">Oil</option>
+          </datalist>
+          <!-- <button id="crtcg" type="button">
+              <p>+</p>
+            </button> -->
+      </div>
+      <label for="prdname">Name</label> 
+      <input type="text" name="prdname" id="prdname" required>
+      <label for="prdprice">Price</label> 
+      <input type="text" name="prdprice" id="prdprice" required>
+      <br>
+      <label for="prdcpt">Capacity</label> 
+      <input type="text" name="prdcpt" id="prdcpt">
+      <label for="prdcost">Cost</label> 
+      <input type="text" name="prdcost" id="prdcost">
+      <br>
+      <label for="prdnote">Note</label> 
+      <input type="text"name="prdnote" id="prdnote">
+      <br>
+      <button id="prtconfirm" >Add</button>
+      </form>
+  </div>
+  </div>
+    <div class="createbutton create_product">
+     
+        <p class="create">+</p>
+     
+    </div>
+  </div>
+</body>
+</html>

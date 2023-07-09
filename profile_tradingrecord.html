@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Record</title>
+    <link rel="stylesheet" href="resetcss.css">
+    <link rel="stylesheet" href="crm.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="n_crm.js"></script>
+</head>
+<body class="allbackground">
+    <div class="header" style="justify-content:end";>
+
+        <div class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+  
+       <div class="sidenavpage">
+        <div class="sidenav">
+           <ul>
+            <li><a href="trading_record.html">Transition</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="index.html">Customers</a></li>
+           </ul>
+        </div>
+       </div>
+     </div>
+   
+    <div class="file_main">
+      <div class="file_card">
+        <div class="label">
+            <p title>Emily Lin</p>
+        </div>
+        <div class="content">
+          <div class="info">
+            <form action="">
+              <div class="photo">
+                <label for="uploadphotos"> <div class="box2"><div class="len"><div class="shot"></div></div></div></label>
+                <input type="file" id="uploadphotos" style="visibility:hidden;" readonly>
+              </div>
+              <div class="profile">
+           
+                 <p id="memberno"> Vip001</p>
+                 <input type="text" name="name" id="name" required placeholder="Name" readonly>
+                 <br>
+          
+                 <input type="txet" name="birthday" id="birthday" placeholder="Birth 01/01" maxlength="5" readonly>
+                 <br>
+                 <input type="text" name="cellphone" id="cellphone" maxlength="10" placeholder="Phone" readonly>
+                 <br>
+
+                 <input list="recommand0" type="text" name="recommand" id="recommand" placeholder="Recommender" readonly>
+                 <datalist id="recommand0">
+                 <option value="徐大捲">徐大捲</option>
+                <option value="劉胖子">劉胖子</option>
+                </datalist>  
+                <br>
+                <input type="text" name="note" id="note" placeholder="備註" readonly >
+                <br>
+              </div>
+          
+            </form>
+          </div>
+          <div class="description">
+            <form action="">
+
+              <div class="function">
+                <button class="backtoforth" type="button" > <a href="profile_tr_history.html"><< Profile</a> </button>
+                <div class="orderdate" style="margin-left: 180px;">20220202</div>
+                <button class="action graybtn" type="button"> <a href="profile_tr_edit.html">Edit</a></button>
+              </div>
+
+              <div class="serviceitems">
+                 <div class="left">
+                   <p>Service</p>
+            
+                   <div class="checkbox">
+                     <input type="checkbox" name="serviceitems" value="wash" id=""  readonly/> Shampoo
+                     <input type="checkbox" name="serviceitems" value="cut" id="" readonly/> Cut
+                     <input type="checkbox" name="serviceitems" value="dye" id="" readonly/> Dye
+                     <input type="checkbox" name="serviceitems" value="perm" id="" readonly/> Perm
+                     <input type="checkbox" name="serviceitems" value="lotion" id="" readonly/> Treatment
+
+                   </div>
+                 </div>
+                 <div class="serviceprice">
+                     <input type="text" name="serviceprice" id="serviceprice" placeholder="Price" readonly>
+                 </div>
+              </div>
+
+
+              <div class="detail">
+                 <div class="left"></div>
+                 <div class="right">
+                    <div class="uploadphoto">
+                
+                       <div class="box">                 
+                         <label for="uploadphotos"> <div class="box2"><div class="len"><div class="shot"></div></div></div></label>
+                         <input type="file" id="uploadphotos" style="visibility:hidden;" readonly>
+                       </div>
+                     
+                       <div class="box"> <label for="uploadphotos"> <div class="box2"><div class="len"><div class="shot"></div></div></div></label>
+                         <input type="file" id="uploadphotos" style="visibility:hidden;" readonly>
+                       </div>
+                
+                       <div class="box"> <label for="uploadphotos"> <div class="box2"><div class="len"><div class="shot"></div></div></div></label>
+                         <input type="file" id="uploadphotos" style="visibility:hidden;" readonly>
+                       </div>
+                    </div>
+
+                    <div class="file_product">
+                       <table id="ed_profile_prd">
+                         <tr>
+                           <th class="Product">Product</th>
+                           <th class="Qty">Qty</th>
+                           <th class="Price">Price</th>
+                         </tr>
+                         <tr>
+                           <td>
+                              <input list="product-list" type="text" name="product" id="product" readonly>
+                              <datalist id="product-list">
+                                 <option value="Fancy Shampoo">Fancy Shampoo</option>
+                                 <option value="Keratin Conditioner">Keratin Conditioner</option>
+                             </datalist>  
+                           </td>
+                           <td>
+                              <input list="qty-list" type="text" name="qty" id="qty" readonly>
+                              <datalist id="qty-list">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                              </datalist>  
+                           </td>
+                           <td>$2000</td>
+                          </tr>
+                        </table>
+
+        
+                        <div class="dash"></div>
+                        <div class="discount">
+                          <h3>Discount</h3>
+                          <div class="discountnumber">
+                              <input type="text" placeholder="Discount" readonly>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <h2>Total</h2>
+                        <p>$2800</p>
+                    </div>
+                  </div>
+              </div>
+            </form>
+          </div>
+           
+         
+        </div>
+      </div>
+    </div>
+</body>
+</html>

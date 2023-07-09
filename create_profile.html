@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create file</title>
+    <link rel="stylesheet" href="resetcss.css">
+    <link rel="stylesheet" href="crm.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="n_crm.js"></script>
+</head>
+<body class="allbackground">
+    <div class="header" style="justify-content:end";>
+
+        <div class="burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+  
+       <div class="sidenavpage">
+        <div class="sidenav">
+           <ul>
+            <li><a href="trading_record.html">Transition</a></li>
+           <li><a href="product.html">Product</a></li>
+           <li><a href="index.html">Customers</a></li>
+           </ul>
+        </div>
+       </div>
+     </div>
+   
+    <div class="file_main">
+      <div class="file_card">
+        <div class="label">
+            <p title></p>
+        </div>
+        <div class="content">
+          <div class="info">
+            <form action="">
+                <div class="photo">
+                  <label for="uploadphotos"> <div class="box2"><div class="len"><div class="shot"></div></div></div></label>
+                  <input type="file" id="uploadphotos" style="visibility:hidden;" >
+                </div>
+              <div class="profile">
+             
+                <p id="memberno"> Vip001</p>
+                <input type="text" name="name" id="name" required placeholder="Name">
+                <br>
+            
+                <input type="txet" name="birthday" id="birthday" placeholder="Birth 01/01" maxlength="5">
+                <br>
+                <input type="text" name="cellphone" id="cellphone" maxlength="10" placeholder="Phone">
+                <br>
+
+                <input list="recommand0" type="text" name="recommand" id="recommand" placeholder="Recommender">
+                  <datalist id="recommand0">
+                  <option value="Emily Lin">Emily Lin</option>
+                  <option value="Racheal Green">Racheal Green</option>
+                 </datalist>  
+              <br>
+                <input type="text" name="note" id="note" placeholder="Note" >
+              <br>
+                <button type="submit" id="profilebtn">Save</button>
+            </form>
+            </div>
+          </div>
+          <div class="description">
+
+           </div>
+          </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
